@@ -1,0 +1,51 @@
+{
+  "row_count": 7043,
+  "column_count": 21,
+  "missing_columns": [],
+  "extra_columns": [
+    "customerID",
+    "Churn"
+  ],
+  "null_counts": {
+    "gender": 0,
+    "SeniorCitizen": 0,
+    "Partner": 0,
+    "Dependents": 0,
+    "tenure": 0,
+    "PhoneService": 0,
+    "MultipleLines": 0,
+    "InternetService": 0,
+    "OnlineSecurity": 0,
+    "OnlineBackup": 0,
+    "DeviceProtection": 0,
+    "TechSupport": 0,
+    "StreamingTV": 0,
+    "StreamingMovies": 0,
+    "Contract": 0,
+    "PaperlessBilling": 0,
+    "PaymentMethod": 0,
+    "MonthlyCharges": 0,
+    "TotalCharges": 11
+  },
+  "null_percent": {
+    "gender": 0.0,
+    "SeniorCitizen": 0.0,
+    "Partner": 0.0,
+    "Dependents": 0.0,
+    "tenure": 0.0,
+    "PhoneService": 0.0,
+    "MultipleLines": 0.0,
+    "InternetService": 0.0,
+    "OnlineSecurity": 0.0,
+    "OnlineBackup": 0.0,
+    "DeviceProtection": 0.0,
+    "TechSupport": 0.0,
+    "StreamingTV": 0.0,
+    "StreamingMovies": 0.0,
+    "Contract": 0.0,
+    "PaperlessBilling": 0.0,
+    "PaymentMethod": 0.0,
+    "MonthlyCharges": 0.0,
+    "TotalCharges": 0.16
+  }
+}
