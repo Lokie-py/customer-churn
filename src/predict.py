@@ -7,7 +7,7 @@ import pandas as pd
 def load_artifacts(artifacts_dir: str):
     model = joblib.load(os.path.join(artifacts_dir, "model.joblib"))
     preprocessor = joblib.load(os.path.join(artifacts_dir, "preprocessor.joblib"))
-    with open(os.path.join(artifacts_dir, "schema.json"), "r") as f:
+    with open(os.path.join(artifacts_dir, "schema.json"), "r", encoding="utf-8") as f:
         schema = json.load(f)
     return model, preprocessor, schema
 
@@ -46,7 +46,10 @@ def predict_batch(input_csv: str, output_csv: str, artifacts_dir: str = "artifac
     out["churn_prediction"] = pred
     out["churn_label"] = out["churn_prediction"].map({0: "No", 1: "Yes"})
 
-    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    output_dir = os.path.dirname(output_csv)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+
     out.to_csv(output_csv, index=False)
 
     print("Prediction completed ✅")
